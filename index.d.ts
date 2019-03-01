@@ -101,8 +101,6 @@ export interface GalleryProps<CustomPhotoProps extends object = {}> {
   ImageComponent?: React.ComponentType<ImageComponentProps<CustomPhotoProps>>
 }
 
-export type SelectedImage = SelectedImage
-
 export type GalleryI<
   CustomPhotoProps extends object = {}
 > = React.ComponentClass<GalleryProps<CustomPhotoProps>>
