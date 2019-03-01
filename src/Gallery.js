@@ -54,9 +54,12 @@ class Gallery extends React.Component {
     // set default breakpoints if user doesn't specify columns prop
     if (columns === undefined) {
       columns = 1;
-      if (containerWidth >= 500) columns = 2;
-      if (containerWidth >= 900) columns = 3;
-      if (containerWidth >= 1500) columns = 4;
+      if (containerWidth >= 300) columns = 2;
+      if (containerWidth >= 500) columns = 3;
+      if (containerWidth >= 700) columns = 4;
+      if (containerWidth >= 900) columns = 5;
+      if (containerWidth >= 1200) columns = 6;
+      if (containerWidth >= 1500) columns = 7;
     }
     const photos = this.props.photos;
     const width = containerWidth - 1;
